@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbería</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .navbar-brand img {
+          max-height: 50px;
+      }
+      .cta-button {
+          background-color: #d9534f;
+          color: white;
+          border: none;
+      }
+      .cta-button:hover {
+          background-color: #c9302c;
+          color: white;
+      }
+      .hero {
+          background-image: url('img');
+          background-size: cover;
+          background-position: center;
+          color: white;
+          text-align: center;
+          padding: 150px 0;
+      }
+      .hero h1 {
+          font-size: 4em;
+          margin-bottom: 20px;
+      }
+      .hero p {
+          font-size: 1.5em;
+          margin-bottom: 30px;
+      }
+      .info-section {
+          padding: 60px 0;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/icons8-peluquero-50.png" alt="Logo de la Barbería">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/cortes.html">Cortes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/cursos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+                    <button class="btn cta-button ml-lg-3">Reservar Ahora</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero"> <img src="/img/LR BARBER.png" alt=""></section>
+        <div class="container">
+            <h1>Bienvenidos a Nuestra Barbería</h1>
+            
+            <p>Donde el estilo y la calidad se encuentran</p>
+            <a href="#" class="btn cta-button">Reservar Cita</a>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Sobre Nosotros</h2>
+                    <p>En nuestra barbería, ofrecemos una experiencia única y personalizada para cada cliente. Nuestro equipo de barberos profesionales está dedicado a brindar el mejor servicio y asegurarse de que salgas luciendo y sintiéndote lo mejor posible.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/corte.jpg" alt="Imagen de la barbería" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
