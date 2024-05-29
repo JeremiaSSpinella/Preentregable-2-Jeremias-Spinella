@@ -1,0 +1,6 @@
+@import "../utilities/variables"; 
+ h1{
+    @include fuente-relleno (red , $primary-color);
+    font-size: 5rem;
+
+}
