@@ -1,0 +1,108 @@
+// Variables
+$primary-color: #333;
+$secondary-color: #fff;
+$accent-color: #f4f4f4;
+$font-family: 'Arial, sans-serif';
+$container-width: 80%;
+$header-padding: 20px 0;
+$banner-padding: 100px 0;
+$section-padding: 50px 0;
+$image-width: 150px;
+$image-border-radius: 50%;
+$nav-margin-left: 210px;
+$font-size-h1: 24px;
+$margin-bottom-servicio: 20px;
+
+// Global styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family;
+}
+
+.container {
+    width: $container-width;
+    margin: auto;
+}
+
+section .container {
+    color: black;
+}
+
+// Header styles
+header {
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: $header-padding;
+
+    h1 {
+        font-size: $font-size-h1;
+    }
+}
+
+// Navigation styles
+nav {
+    ul {
+        list-style: none;
+
+        li {
+            display: inline;
+            margin-left: $nav-margin-left;
+
+            a {
+                color: $secondary-color;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+// Banner styles
+.banner {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    color: $secondary-color;
+    text-align: center;
+    padding: $banner-padding;
+}
+
+// Servicios section styles
+#servicios {
+    background-color: $accent-color;
+    padding: $section-padding;
+
+    .servicio {
+        margin-bottom: $margin-bottom-servicio;
+
+        h3 {
+            color: $primary-color;
+        }
+    }
+}
+
+// Equipo section styles
+#equipo {
+    padding: $section-padding;
+
+    .barbero {
+        text-align: center;
+
+        img {
+            width: $image-width;
+            border-radius: $image-border-radius;
+            margin-bottom: $margin-bottom-servicio;
+        }
+    }
+}
+
+// Footer styles
+footer {
+    background-color: $primary-color;
+    color: $secondary-color;
+    text-align: center;
+    padding: $header-padding;
+}
