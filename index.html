@@ -6,13 +6,18 @@
     <title>Barbería</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
+    <!--LINK CSS -->
+    <link rel="stylesheet" href="css/style.css">
+        <!-- LINK AOS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   
+   <style>
       .navbar-brand img {
           max-height: 50px;
       }
       .cta-button {
           background-color: #d9534f;
-          color: white;
+          color: rgb(245, 245, 245);
           border: none;
       }
       .cta-button:hover {
@@ -71,7 +76,7 @@
         </nav>
     </header>
 
-    <section class="animate_animated animate__flip"> <img src="/img/LR BARBER.png"></section>
+    <section data-aos="fade" data-aos-duration="2500" data-aos-easing="ease-in-out"> <img class="banner" src="/img/LR BARBER.png"></section>
         <div class="container">
             <h1>Bienvenidos a Nuestra Barbería</h1>
             
@@ -98,5 +103,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

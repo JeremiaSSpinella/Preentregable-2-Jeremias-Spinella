@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbería - Cursos</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
+   <!--LINK CS-->
+   <link rel="stylesheet" href="../css/style.css">
+   <!--LINK DE BOOTSTRAP-->
+   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+ 
     <style>
         .courses-section {
             padding: 60px 0;
@@ -32,7 +36,7 @@
             </div>
             <div class="row">
                 <div class="col-md-4 mb-4">
-                    <div class="card">
+                    <div class="card animate__animated">
                         <img src="/img/curso3.png" class="card-img-top" alt="Curso 1">
                         <div class="card-body">
                             <h5 class="card-title">Curso de Barbería Básica</h5>
@@ -41,7 +45,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <div class="card">
+                    <div class="card animate__animated">
                         <img src="/img/curso2.png" class="card-img-top" alt="Curso 2">
                         <div class="card-body">
                             <h5 class="card-title">Curso Avanzado de Corte</h5>
@@ -50,7 +54,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <div class="card">
+                    <div class="card animate__animated">
                         <img src="/img/curso.png" class="card-img-top" alt="Curso 3">
                         <div class="card-body">
                             <h5 class="card-title">Curso de Estilismo y Barba</h5>
@@ -66,5 +70,24 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <!-- Custom JS -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__flipInY');
+                        entry.target.style.visibility = 'visible';
+                    }
+                });
+            });
+
+            cards.forEach(card => {
+                observer.observe(card);
+            });
+        });
+    </script>
 </body>
 </html>

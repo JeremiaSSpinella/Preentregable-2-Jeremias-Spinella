@@ -1,18 +1,76 @@
-/* Error: Undefined mixin.
- *   ,
- * 3 |     @include fuente-relleno (red , $primary-color);
- *   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\components\_titulop.scss 3:5  @import
- *   scss\style.scss 55:9               root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a   \2577 \a 3 \2502      @include fuente-relleno (red , $primary-color);\d\a   \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\components\\_titulop.scss 3:5  @import\a   scss\\style.scss 55:9               root stylesheet";
+@charset "UTF-8";
+header {
+  background-color: rgb(32, 31, 31);
+  color: #fff;
+  padding: 20px 0;
 }
+header h1 {
+  font-size: 24px;
+}
+header nav ul {
+  list-style: none;
+}
+header nav ul li {
+  display: inline;
+  margin-left: 210px;
+}
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.banner {
+  width: 100%;
+  /* background-image: url(../../img/LR\ BARBER.png); */
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*body*/
+body {
+  font-family: "Arial, sans-serif";
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: transparent;
+  color: rgb(32, 31, 31);
+  font-size: 5rem;
+}
+
+section .container {
+  color: black;
+}
+
+#servicios {
+  padding: 50px 0;
+}
+#servicios .servicio {
+  margin-bottom:  20px;
+}
+#servicios .servicio h3 {
+  color: rgb(32, 31, 31);
+}
+
+#equipo {
+  padding: 50px 0;
+}
+#equipo .barbero {
+  text-align: center;
+}
+#equipo .barbero img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom:  20px;
+}
+
+/*# sourceMappingURL=style.css.map */

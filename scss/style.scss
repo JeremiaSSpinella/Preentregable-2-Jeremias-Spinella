@@ -1,11 +1,14 @@
 
-//Global styles
+// layout
+@import "./layout/header";
+@import "./layout/portada"; 
+//base 
+@import "./base/reset";
 
+// utilities
+@import "./utilities/variables";
+@import "./components/titulop";
 
-/*.container {
-    width: $container-width;
-    margin: auto;
-}
 
 section .container {
     color: black;
@@ -16,9 +19,7 @@ section .container {
 
 // Servicios section styles
 #servicios {
-    background-color: $accent-color;
     padding: $section-padding;
-
     .servicio {
         margin-bottom: $margin-bottom-servicio;
 
@@ -42,14 +43,5 @@ section .container {
         }
     }
 }
-*/
 
-// layout
-@import "./layout/header";
-@import "./layout/portada"; 
-//base 
-@import "./base/reset";
 
-// utilities
-@import "./utilities/variables";
-@import "./components/titulop";
